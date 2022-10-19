@@ -10,9 +10,9 @@ def calefactor(medicion, temp_actual):
         estado = False
         medicion = temp_actual - random.uniform(0,2)
   
-    linea = '{:.2f};{}\n'.format(medicion, estado)
-    print(linea)
-    archivo.write(linea)
+
+    print('{:.2f};{}'.format(temp_actual, estado))
+    archivo.write('{:.2f};{}\n'.format(temp_actual, estado))
     
     return medicion
 
